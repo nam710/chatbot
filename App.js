@@ -113,8 +113,7 @@ export default function App() {
             };
             setUserInput("");
 
-            const apiKey =
-              "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";
+            const apiKey = process.env.EXPO_PUBLIC_OPENAI_API_KEY;
             try {
               const client = axios.create({
                 headers: {
